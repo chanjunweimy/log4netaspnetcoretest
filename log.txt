@@ -1,0 +1,7 @@
+2018-07-10 16:45:25,584 [7] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost [(null)] - Request starting HTTP/1.1 GET http://localhost:51286/  
+2018-07-10 16:45:27,121 [7] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost [(null)] - Request finished in 1716.5155ms 404 
+2018-07-10 16:45:31,955 [7] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost [(null)] - Request starting HTTP/1.1 GET http://localhost:51286/api/Home  
+2018-07-10 16:45:32,066 [7] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [(null)] - Executing action method NetCoreWebApplication.Controllers.HomeController.Index (NetCoreWebApplication) with arguments ((null)) - ModelState is Valid
+2018-07-10 16:45:32,096 [7] INFO  Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor [(null)] - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2018-07-10 16:45:32,209 [7] INFO  Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker [(null)] - Executed action NetCoreWebApplication.Controllers.HomeController.Index (NetCoreWebApplication) in 152.4696ms
+2018-07-10 16:45:32,225 [7] INFO  Microsoft.AspNetCore.Hosting.Internal.WebHost [(null)] - Request finished in 262.1484ms 200 application/json; charset=utf-8
