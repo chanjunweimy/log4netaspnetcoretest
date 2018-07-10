@@ -22,7 +22,7 @@ namespace NetCoreWebApplication
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            loggerFactory.AddLog4Net("log4net.config");
+            // loggerFactory.AddLog4Net("log4net.config");
             var logger = loggerFactory.CreateLogger<Startup>();
             logger.LogDebug("HELLO");
 
