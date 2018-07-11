@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreWebApplication", "NetCoreWebApplication\NetCoreWebApplication.csproj", "{BD225D56-2318-4D76-AA46-80FBDD37B3DC}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Extensions.Logging.Log4Net.AspNetCore", "Microsoft.Extensions.Logging.Log4Net.AspNetCore\Microsoft.Extensions.Logging.Log4Net.AspNetCore.csproj", "{BEEC478C-5928-4F99-BABB-1E6BD6B8A14D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BD225D56-2318-4D76-AA46-80FBDD37B3DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD225D56-2318-4D76-AA46-80FBDD37B3DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD225D56-2318-4D76-AA46-80FBDD37B3DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEEC478C-5928-4F99-BABB-1E6BD6B8A14D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEEC478C-5928-4F99-BABB-1E6BD6B8A14D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEEC478C-5928-4F99-BABB-1E6BD6B8A14D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEEC478C-5928-4F99-BABB-1E6BD6B8A14D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
