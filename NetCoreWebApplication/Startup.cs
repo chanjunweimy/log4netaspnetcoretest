@@ -16,11 +16,6 @@ namespace NetCoreWebApplication
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddIdentityServer()
-                .AddDeveloperSigningCredential()
-                .AddInMemoryApiResources(Config.GetApiResources())
-                .AddInMemoryClients(Config.GetClients());
-
             services.AddMvc();
         }
 
@@ -39,8 +34,6 @@ namespace NetCoreWebApplication
             app.UseMvcWithDefaultRoute();
             app.UseDefaultFiles();
             app.UseStaticFiles();
-
-            app.UseIdentityServer();
         }
     }
 }

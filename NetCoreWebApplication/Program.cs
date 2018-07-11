@@ -21,17 +21,25 @@ namespace NetCoreWebApplication
             BuildWebHost(args).Run();
         }
 
-        public static IWebHost BuildWebHost(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
+        public static IWebHost BuildWebHost(string[] args)
+        {
+            var configuration = new ConfigurationBuilder()
+                    .SetBasePath(Directory.GetCurrentDirectory())
+                    .AddJsonFile("appsettings.json", true)
+                    .Build();
+
+            return WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
+                .UseConfiguration(configuration)
                 .ConfigureLogging((hostingContext, logging) =>
                 {
-                    logging.AddLog4Net();
+                    logging.AddLog4Net(configuration["LogConfigFile"], configuration.GetSection("Log4net"));
                     logging.SetMinimumLevel(LogLevel.Debug);
                     // The ILoggingBuilder minimum level determines the
                     // the lowest possible level for logging. The log4net
                     // level then sets the level that we actually log at.
                 })
                 .Build();
+        }
     }
 }
